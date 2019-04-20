@@ -40,7 +40,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         try:
-            day = str(input('Please choose a day of week: All, Monday, Tuesday, ... Sunday:')).title()
+            day = str(input('Please choose between weekdays: All, Monday, Tuesday, ... Sunday:')).title()
         except ValueError:
             continue
         if day.title() in weekdays:

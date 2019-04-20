@@ -20,7 +20,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         try:
-            city = str(input('Please choose a city: Chicago, New York City, Washington: ')).lower()
+            city = str(input('Please choose between cities: Chicago, New York City, Washington: ')).lower()
         except ValueError:
             continue
         if city in CITY_DATA:
